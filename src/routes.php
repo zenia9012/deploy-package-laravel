@@ -2,9 +2,9 @@
 
 use Illuminate\Http\Response;
 
-Route::post(config('deploy.deploy.url'), function (){
+Route::post('deploy/pull', function (){
     exec('git pull');
-    return response()->json('', Response::HTTP_OK);
+    return response()->json('success', Response::HTTP_OK);
 })->name('deploy.pull');
 
 
