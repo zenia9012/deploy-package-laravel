@@ -1,0 +1,41 @@
+{
+    "name": "yevhenii/deploy",
+    "description": "Laravel package for automatic deploy to server",
+    "license": "MIT",
+    "version": "0.1",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Yevhenii Riabyi",
+            "email": "zenia9012@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/zenia9012/deploy",
+    "keywords": ["Laravel", "Deploy"],
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yevhenii\\Deploy\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Yevhenii\\Deploy\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Yevhenii\\Deploy\\DeployServiceProvider"
+            ],
+            "aliases": {
+                "Deploy": "Yevhenii\\Deploy\\Facades\\Deploy"
+            }
+        }
+    }
+}
