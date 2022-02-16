@@ -2,7 +2,6 @@
     "name": "yevhenii/deploy",
     "description": "Laravel package for automatic deploy to server",
     "license": "MIT",
-    "version": "1.0.0",
     "minimum-stability": "dev",
     "authors": [
         {
